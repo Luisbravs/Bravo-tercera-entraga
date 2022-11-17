@@ -1,0 +1,150 @@
+@use "globales";
+
+.ComoFunciona-box-titulo{
+    background-color: globales.$color-box-titulo-seccion;
+}
+.ComoFunciona__titulo{
+    color: globales.$color-letra-titulo-seccion;
+}
+.ComoFunciona__parrafo{
+    font-size: 1.5rem;
+    text-decoration: bold;
+
+}
+
+
+.submenu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+   
+.MEN-1{
+    display: inline-block;
+  
+    
+    height: 50px;
+    width: 200px;
+    
+     color:green;
+     border-radius: 5px;
+     text-align: center;
+     padding: 10px;
+   a{
+    text-decoration: none;
+    color: black;
+
+    
+   }
+}
+.col-menu{
+    background: rgb(242,247,0);
+    background: linear-gradient(180deg, rgba(242,247,0,1) 26%, rgba(248,246,0,1) 54%, rgba(251,250,60,1) 70%);
+}
+
+}
+/*COMO FUNCIONA CONTENIDO */
+
+.img-comofunciona{
+    height: 70vh;
+    width: 40vw;
+    padding-left: 3rem;
+   
+}
+
+.caja-img{
+    align-self:center;
+}
+
+.p-titulo{
+    font-weight: 500;
+    font-size: 19px;
+    
+}
+.indicaciones-grupo{
+    text-align: start;
+}
+.lista-compra{
+    text-align: start;
+}
+.texto-p4{
+    font-weight: 500;
+}
+/* media quaris*/
+
+@media (max-width:992px){
+.ComoFunciona__parrafo{
+    font-size: 22px;
+}
+
+
+    .p-titulo{
+        font-weight: 500;
+        font-size: 17px;
+        text-align: justify;
+}
+
+.MEN-1{
+   a{
+    font-size: 13px;
+}
+}
+.img-comofunciona{
+    width: 70vw;
+    height: 60vh;
+    padding: 0;
+}
+.caja-img{
+    padding: 0;
+}
+}
+@media (max-width:769px){
+    .ComoFunciona__titulo{
+        font-size: 25px;
+    }
+    .ComoFunciona__parrafo{
+        font-size: 20px;
+    }
+    
+.MEN-1{
+    width: 400px;
+    
+    a{ font-size:9px;
+ }
+ }
+ .MenuDeOpciones{
+    width:100%;
+ }
+}
+@media (max-width:650px){
+    .img-comofunciona{
+        width: 68vw;
+        height: 45vh;
+        padding: 0;
+    }
+}
+@media (max-width:550px){
+    .submenu{
+        .MEN-1{
+            a{
+                font-size: 8px;
+            }
+        }
+    }
+}
+@media (max-width:390px){
+    .submenu{
+
+   
+    .MEN-1{
+        width: 400px;
+        height: 60px;
+        a{
+        font-size:8 ;
+        }
+      
+       
+     }
+     
+    }
+}

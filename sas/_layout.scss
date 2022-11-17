@@ -1,0 +1,176 @@
+@use "globales";
+
+header{
+    height: 40vh;
+    background-color: globales.$color-header;
+    border-bottom:solid 5px globales.$color-border-header;
+
+#logo{
+    height: 28vh;
+}
+.boxlogo{
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+   
+}
+.boxtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: aliceblue;
+    font-size: 30px;
+}
+}
+
+
+
+
+/*seudoclases header*/
+
+.nav-ul .nav-item:hover{
+    transform:scale(1.2);
+    transition: 0.3ms;  
+}
+.nav-ul .nav-item .nav-link:hover{
+    color: #9b0101;
+    
+}
+.box-nombre .nombre:hover{
+    color:#cfc7c7;
+    transform:scale(1.1);
+    transition: 0.3ms;  
+} 
+/*seudoclases img-index*/
+
+.box-img-index .img-index:hover {
+    transform:scale(1.2);
+    transition: 0.6ms;  
+}
+
+/*seudoclases footer*/
+.footer-box .footer-productos:hover{
+    color:#616060;     
+}
+
+@for $item from 1 through 4 {
+    .nav-item:nth-child(#{$item}){
+        animation-delay: $item*0.2 ;
+    }
+    
+}
+    
+
+
+
+/*MEDIA QUARY/*
+
+/*header*/
+@media (max-width:768px){
+    #logo{
+        height: 28vh;
+    }
+   
+    .boxtitulo{
+      margin-bottom: 20px;
+
+      h1{
+        font-size:22px;   
+    }
+    }
+}
+@media (max-width:614px) {
+    .nombre{
+        display: none;
+    }
+    #logo{
+      height:23vh;
+    }  
+
+}
+@media (max-width:576px){
+    .nombre{
+        display: none;
+    }
+
+    h1{
+        display:none;
+    }
+    header{
+        height: 40vh;
+    }
+}
+@media (max-width:480px){
+   h1{
+    font-size:18px ;
+   }
+}
+@media (max-width:348px){
+    h1{
+     font-size:15px ;
+    }
+}
+@media (max-width:368px){
+    #logo{
+        height:20vh;
+      }  
+      header{
+        height: 38vh;
+      }
+}
+
+
+/*contacto*/
+.formulario__box-contacto {
+    color: white;
+}
+.formulario__box-titulo{
+    .formulario__titulo{
+        font-size: 30px;
+    }
+    .formulario__parrafo{
+        font-size: 23px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+/*FORMULARIOS*/
+
+
+.box-form{
+    background-image: url(../imagen/basketball-g2535881f0_1920.jpg);
+    background-position:center;
+    background-size: cover;
+
+    .titulo-form{
+        color: white;
+        
+    }
+    .cuentanos{
+        font-size: 25px;
+        color: white;
+    }
+    .input{
+        width:90%;
+        height: 50px;
+        background-color: #b1a2a244;
+        border:solid 0.5px rgba(82, 67, 67, 0.342)
+    }
+    .input-area{
+        width: 90%;
+        background-color: #b1a2a244;
+        border:solid 0.5px rgba(82, 67, 67, 0.342)
+    }
+    .boton{
+        background-color: #793a3a;
+        height: 40px;
+        width: 90%;
+        color: white;
+        border:none;
+        margin: 20px;
+       
+}
+}

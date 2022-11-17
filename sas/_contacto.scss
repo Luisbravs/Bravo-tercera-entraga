@@ -1,0 +1,10 @@
+@use "globales";
+
+.formulario__box-contacto{
+    background-color: globales.$color-box-titulo-seccion;
+    .contac-titul{
+        color: globales.$color-letra-titulo-seccion;
+    
+    }
+}
+

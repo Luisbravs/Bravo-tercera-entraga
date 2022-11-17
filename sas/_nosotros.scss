@@ -1,0 +1,24 @@
+@use "globales";
+.subtitulo-pagina{
+    background-color: globales.$color-box-titulo-seccion;
+    .titulo-nosotros{
+        color: globales.$color-letra-titulo-seccion;
+    }
+}
+.box-nosotros .box-video:hover{
+    transform: scale(1.2);
+    transition: 0.5ms;
+   
+}
+.box-nosotros .box-text:hover{
+    font-size: 20px;
+    color:bold;
+    transition: 0.4ms;
+     
+}
+.subtitulo-pagina .nosotros-titulo:hover{
+    color: #f8f8f8;
+    transform: rotateY(20deg);
+    transition:1ms;
+    
+}

@@ -1,0 +1,18 @@
+@use "globales";
+
+
+.fondo-productos{
+    background-color: #cdfa0536;
+    color: globales.$color-letra-titulo-seccion;
+    .nosotros-titulo{
+        color: globales.$color-letra-titulo-seccion;
+    }
+}
+.box-productos{
+    background-color: globales.$color-box-titulo-seccion;
+   
+}
+    .titulo-productos{
+        color:globales.$color-letra-titulo-seccion;
+    }
+

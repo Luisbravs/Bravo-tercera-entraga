@@ -1,0 +1,30 @@
+@use "nosotros";
+@use "comofunciona";
+@use "globales";
+@use "layout";
+@use "productos";
+@use "contacto";
+@use "componente";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* MEDIA QUARY /*
+
+ 
+/*index imagen*/
+@media (max-width:576px){
+    .img-index{
+        width: 100vh;
+        height: auto;
+
+} 
+}
+
