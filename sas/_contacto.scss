@@ -4,6 +4,12 @@
     background-color: globales.$color-box-titulo-seccion;
     .contac-titul{
         color: globales.$color-letra-titulo-seccion;
+         
+        &:hover{
+            color: #f8f8f8;
+            transform: rotateY(20deg);
+            transition:1ms;
+        }
     
     }
 }

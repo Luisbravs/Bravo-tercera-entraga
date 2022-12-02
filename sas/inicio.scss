@@ -1,10 +1,15 @@
 
 .contenedor-od{
-    background-color:rgb(218, 228, 238);
+    background-color:rgb(216, 217, 218);
     color: rgb(41, 39, 39);
     height: 55vh;
+    &:hover{
+        background-color: rgb(168, 165, 165);
+        border-top: solid 5px #CEFA05;
+    }
    .span-od{
     font-weight: bold;
+    
     
    }
    .box-od{
@@ -15,7 +20,7 @@
     font-size:1.3rem;
    }
    .btn-info2{
-    margin: 20px;
+    margin-top: 20px;
    }
    .btn-info{
     background-color: #CEFA05;
@@ -28,13 +33,14 @@
     .link-info{
         text-decoration: none;
         color: rgb(63, 62, 62);
-       
+      
     }
    
     &:hover{
         background-color:rgb(70, 69, 69);
         color:aliceblue ;
         border-radius: 5px;
+        border-bottom: solid 3px #CEFA05;
         .link-info{
             color: aliceblue;
         }
@@ -46,61 +52,85 @@
 }
 /*media quari*/
 
-@media (max-width:1116px){
+@media (max-width:1115px){
     .contenedor-od{
         height: 60vh;
+        .btn-info1{
+            margin-top:20px;
+        }
     }
     
 }
-@media (max-width:1030px){
-    .box-od{
+@media (max-width:1029px){
+    .contenedor-od{
+    .parrafo-od{
         text-align:start;
-        font-size: 10px;
+        font-size: 13px;
        }
      .titulo-od-grup{
-        font-size:1.5rem;
+        font-size:18px;
        }
-    .btn-info2{
-        margin-top: 20px;
-        
+       .btn-info1{
+        margin-top:20px;
        }
+    }
+   
 }
-@media (max-width:926px){
-    .btn-info2{
-        margin-top:0px;
-        
-       }
-    
-       }
-@media (max-width:854px){
-    .btn-info2{
-            margin-top:23px;}
-         }
-@media (max-width:806px){
-    .btn-info2{
+@media (max-width:976px){
+    .contenedor-od{
+        .btn-info2{
+            margin-top:40px;
+        }
+    }
+}
+@media (max-width:879px){
+    .contenedor-od{
+        .btn-info2{
+            margin-top:20px;
+           
+        }
+        .btn-info{
+            height:40px;
+            width: 170px;
+        }
+    }
+}
+
+@media (max-width:812px){
+    .contenedor-od{
+    .btn-info1{
             margin-top:0px;}
-             }
-    
+     .btn-info2{
+                margin-top:20px;}
+             }       
+
+         }
 @media (max-width:788px){
-     .titulo-od{
-            margin-bottom:30px;}
-                 }
-@media (max-width:768px){
+    .titulo-grup{
+            margin-bottom:29px;}
+    .titulo-od{
+                margin-bottom:30px;}
+                     }
+     
+@media (max-width:769px){
      .contenedor-od{
-            height: 100vh;
+            height: 60vh;
             .btn-info{
-                height: 30px;
+                height: 35px;
                 width: 150px;
               }
+              .btn-info2{
+                margin-top: 0;
+              }
               .link-info{
-                font-size: 15px;
+                font-size: 14px;
               }
             
         }
         
     .titulo-od{
             font-size:15px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
            }
     .titulo-grup{
             font-size: 15px;
@@ -108,24 +138,32 @@
            }
         
                      }
-@media (max-width:508px){
+    @media (max-width:767px){
+        .contenedor-od{
+            height: 90vh;
+        .btn-info2{
+            margin-inline-start: 0;
+        }    
+        .titulo-od-grup{
+                margin-top: 0;
+              } 
+        }
+    }
+@media (max-width:695px){
     .contenedor-od{
              height: 100vh;
              .btn-info{
-                height: 26px;
-                width: 150px;
+                height: 28px;
+                width: 155px;
               }
               .link-info{
-                font-size: 15px;
+                font-size: 12px;
               }
              }
     .box-od{
          .titulo-od-grup{
                 font-size: 18px;
             }
-            .titulo-od{
-                margin-bottom: 5px;
-                   }
                   
               .parrafo-od{
                   font-size: 12px;
@@ -134,19 +172,17 @@
                 height: 26px;
                 width: 130px;
               }
-              .link-info{
-                font-size: 12px;
-              }
+           
         }
         }
 
                 
 @media (max-width:430px){
         .contenedor-od{
-            height: 105vh;
+            height: 110vh;
             .btn-info{
-                 height:20px;
-                 width:115px;
+                 height:26px;
+                 width:120px;
                     }
             .link-info{
                  font-size: 10px;
@@ -155,6 +191,10 @@
                 }
                  }
                     }
+ @media (max-width:430px){
+        .contenedor-od{
+             height: 115vh;}
+                        }
 @media (max-width:339px){
         .box-od{
            .titulo-od-grup{

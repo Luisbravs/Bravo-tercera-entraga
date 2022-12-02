@@ -193,11 +193,44 @@ header h1 {
   transition: 0.6ms;
 }
 
-/*seudoclases footer*/
+/*footer*/
+.foot-contenedor:hover {
+  border-top: solid 6px #CEFA05;
+}
+
+.footer-box .jab-d {
+  font-weight: 700;
+}
+.footer-box .jab-d:hover {
+  color: #616060;
+}
+.footer-box .p-jab-d {
+  font-size: 14px;
+}
+.footer-box .p-jab-d:hover {
+  color: #cfc7c7;
+}
+.footer-box .footer-productos {
+  font-weight: 600;
+  font-size: 20px;
+}
 .footer-box .footer-productos:hover {
   color: #616060;
 }
 
+.footer-link .buc-productos {
+  font-size: 14px;
+  color: #616060;
+}
+.footer-link .buc-productos:hover {
+  color: #cfc7c7;
+}
+
+@media (max-width: 991px) {
+  .footer-box {
+    text-align: center;
+  }
+}
 .nav-item:nth-child(1) {
   animation-delay: 0.2;
 }
@@ -332,6 +365,11 @@ header h1 {
 }
 .formulario__box-contacto .contac-titul {
   color: black;
+}
+.formulario__box-contacto .contac-titul:hover {
+  color: #f8f8f8;
+  transform: rotateY(20deg);
+  transition: 1ms;
 }
 
 /*carousel index*/
@@ -482,9 +520,13 @@ header h1 {
 }
 
 .contenedor-od {
-  background-color: rgb(218, 228, 238);
+  background-color: rgb(216, 217, 218);
   color: rgb(41, 39, 39);
   height: 55vh;
+}
+.contenedor-od:hover {
+  background-color: rgb(168, 165, 165);
+  border-top: solid 5px #CEFA05;
 }
 .contenedor-od .span-od {
   font-weight: bold;
@@ -497,7 +539,7 @@ header h1 {
   font-size: 1.3rem;
 }
 .contenedor-od .btn-info2 {
-  margin: 20px;
+  margin-top: 20px;
 }
 .contenedor-od .btn-info {
   background-color: #CEFA05;
@@ -515,84 +557,109 @@ header h1 {
   background-color: rgb(70, 69, 69);
   color: aliceblue;
   border-radius: 5px;
+  border-bottom: solid 3px #CEFA05;
 }
 .contenedor-od .btn-info:hover .link-info {
   color: aliceblue;
 }
 
 /*media quari*/
-@media (max-width: 1116px) {
+@media (max-width: 1115px) {
   .contenedor-od {
     height: 60vh;
   }
-}
-@media (max-width: 1030px) {
-  .box-od {
-    text-align: start;
-    font-size: 10px;
-  }
-  .titulo-od-grup {
-    font-size: 1.5rem;
-  }
-  .btn-info2 {
+  .contenedor-od .btn-info1 {
     margin-top: 20px;
   }
 }
-@media (max-width: 926px) {
-  .btn-info2 {
-    margin-top: 0px;
+@media (max-width: 1029px) {
+  .contenedor-od .parrafo-od {
+    text-align: start;
+    font-size: 13px;
+  }
+  .contenedor-od .titulo-od-grup {
+    font-size: 18px;
+  }
+  .contenedor-od .btn-info1 {
+    margin-top: 20px;
   }
 }
-@media (max-width: 854px) {
-  .btn-info2 {
-    margin-top: 23px;
+@media (max-width: 976px) {
+  .contenedor-od .btn-info2 {
+    margin-top: 40px;
   }
 }
-@media (max-width: 806px) {
-  .btn-info2 {
+@media (max-width: 879px) {
+  .contenedor-od .btn-info2 {
+    margin-top: 20px;
+  }
+  .contenedor-od .btn-info {
+    height: 40px;
+    width: 170px;
+  }
+}
+@media (max-width: 812px) {
+  .contenedor-od .btn-info1 {
     margin-top: 0px;
+  }
+  .contenedor-od .btn-info2 {
+    margin-top: 20px;
   }
 }
 @media (max-width: 788px) {
+  .titulo-grup {
+    margin-bottom: 29px;
+  }
   .titulo-od {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .contenedor-od {
-    height: 100vh;
+    height: 60vh;
   }
   .contenedor-od .btn-info {
-    height: 30px;
+    height: 35px;
     width: 150px;
   }
+  .contenedor-od .btn-info2 {
+    margin-top: 0;
+  }
   .contenedor-od .link-info {
-    font-size: 15px;
+    font-size: 14px;
   }
   .titulo-od {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .titulo-grup {
     font-size: 15px;
   }
 }
-@media (max-width: 508px) {
+@media (max-width: 767px) {
+  .contenedor-od {
+    height: 90vh;
+  }
+  .contenedor-od .btn-info2 {
+    margin-inline-start: 0;
+  }
+  .contenedor-od .titulo-od-grup {
+    margin-top: 0;
+  }
+}
+@media (max-width: 695px) {
   .contenedor-od {
     height: 100vh;
   }
   .contenedor-od .btn-info {
-    height: 26px;
-    width: 150px;
+    height: 28px;
+    width: 155px;
   }
   .contenedor-od .link-info {
-    font-size: 15px;
+    font-size: 12px;
   }
   .box-od .titulo-od-grup {
     font-size: 18px;
-  }
-  .box-od .titulo-od {
-    margin-bottom: 5px;
   }
   .box-od .parrafo-od {
     font-size: 12px;
@@ -601,21 +668,23 @@ header h1 {
     height: 26px;
     width: 130px;
   }
-  .box-od .link-info {
-    font-size: 12px;
-  }
 }
 @media (max-width: 430px) {
   .contenedor-od {
-    height: 105vh;
+    height: 110vh;
   }
   .contenedor-od .btn-info {
-    height: 20px;
-    width: 115px;
+    height: 26px;
+    width: 120px;
   }
   .contenedor-od .link-info {
     font-size: 10px;
     padding: 5px;
+  }
+}
+@media (max-width: 430px) {
+  .contenedor-od {
+    height: 115vh;
   }
 }
 @media (max-width: 339px) {
