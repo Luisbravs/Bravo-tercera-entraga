@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .subtitulo-pagina {
   background-color: #CEFA05;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .subtitulo-pagina .titulo-nosotros {
   color: black;
@@ -11,20 +12,67 @@
   transition: 0.5ms;
 }
 
+.box-nosotros .nosotros__parrafo {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 23px;
+}
+.box-nosotros .box-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+}
 .box-nosotros .box-text:hover {
   font-size: 20px;
   color: bold;
   transition: 0.4ms;
 }
 
-.subtitulo-pagina .nosotros-titulo:hover {
+.subtitulo-pagina .nosotros-titulo :hover {
   color: #f8f8f8;
   transform: rotateY(20deg);
   transition: 1ms;
 }
 
+@media (max-width: 991px) {
+  .box-nosotros .nosotros__parrafo {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 18px;
+  }
+  .box-nosotros .box-text {
+    padding-top: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+  }
+}
+@media (max-width: 585px) {
+  .box-nosotros .nosotros__parrafo {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 14px;
+  }
+  .box-nosotros .box-text {
+    padding-top: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+  }
+}
+@media (max-width: 495px) {
+  .box-nosotros .nosotros__parrafo {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 13px;
+  }
+  .box-nosotros .box-text {
+    padding-top: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 12px;
+  }
+}
 .ComoFunciona-box-titulo {
   background-color: #CEFA05;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 .ComoFunciona__titulo {
@@ -32,8 +80,14 @@
 }
 
 .ComoFunciona__parrafo {
-  font-size: 1.5rem;
+  font-size: 22px;
   text-decoration: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.ComoFunciona__box--texto .ComoFunciona__opciones {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .submenu {
@@ -53,6 +107,11 @@
 .submenu .MEN-1 a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.submenu .MEN-1 a:hover {
+  border-bottom: 4px solid rgb(238, 225, 214);
 }
 .submenu .col-menu {
   background: rgb(242, 247, 0);
@@ -72,7 +131,14 @@
 
 .p-titulo {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.instrucciones {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .indicaciones-grupo {
@@ -81,10 +147,54 @@
 
 .lista-compra {
   text-align: start;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.texto-p2 {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.texto-p3 {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .texto-p4 {
-  font-weight: 500;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.titulo-h2 {
+  font-size: 25px;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.pasos-envio {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.indicaciones-clinica {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.indicaciones-grupo {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.compra-minima {
+  font-size: 25px;
+  color: black;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: start;
 }
 
 /* media quaris*/
@@ -168,23 +278,22 @@ header .boxtitulo {
 }
 header h1 {
   color: aliceblue;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-right: 30px;
 }
 
 /*seudoclases header*/
-.nav-ul .nav-item:hover {
+.nav-ul:hover {
   transform: scale(1.2);
   transition: 0.3ms;
 }
-
+.nav-ul .nav-item {
+  font-family: "Barlow Condensed", sans-serif;
+}
 .nav-ul .nav-item .nav-link:hover {
   color: #9b0101;
-}
-
-.box-nombre .nombre:hover {
-  color: #cfc7c7;
-  transform: scale(1.1);
-  transition: 0.3ms;
 }
 
 /*seudoclases img-index*/
@@ -194,18 +303,25 @@ header h1 {
 }
 
 /*footer*/
+.foot-contenedor .Copyright {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
 .foot-contenedor:hover {
   border-top: solid 6px #CEFA05;
 }
 
 .footer-box .jab-d {
   font-weight: 700;
+  font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .footer-box .jab-d:hover {
   color: #616060;
 }
 .footer-box .p-jab-d {
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 .footer-box .p-jab-d:hover {
   color: #cfc7c7;
@@ -213,6 +329,8 @@ header h1 {
 .footer-box .footer-productos {
   font-weight: 600;
   font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 .footer-box .footer-productos:hover {
   color: #616060;
@@ -220,15 +338,66 @@ header h1 {
 
 .footer-link .buc-productos {
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
   color: #616060;
 }
 .footer-link .buc-productos:hover {
   color: #cfc7c7;
 }
 
+/*footer-media quary*/
 @media (max-width: 991px) {
   .footer-box {
     text-align: center;
+  }
+  .foot-contenedor .footer-productos {
+    font-size: 18px;
+  }
+  .foot-contenedor .buc-productos {
+    font-size: 14px;
+  }
+  .foot-contenedor .Copyright {
+    font-size: 12px;
+  }
+  .foot-contenedor .jab-d {
+    font-size: 18px;
+  }
+  .foot-contenedor .p-jab-d {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .foot-contenedor .footer-productos {
+    font-size: 16px;
+  }
+  .foot-contenedor .buc-productos {
+    font-size: 13px;
+  }
+  .foot-contenedor .jab-d {
+    font-size: 16px;
+  }
+  .foot-contenedor .p-jab-d {
+    font-size: 13px;
+  }
+  .foot-contenedor .Copyright {
+    font-size: 11px;
+  }
+}
+@media (max-width: 570px) {
+  .foot-contenedor .footer-productos {
+    font-size: 14px;
+  }
+  .foot-contenedor .buc-productos {
+    font-size: 11px;
+  }
+  .foot-contenedor .jab-d {
+    font-size: 14px;
+  }
+  .foot-contenedor .p-jab-d {
+    font-size: 11px;
+  }
+  .foot-contenedor .Copyright {
+    font-size: 10px;
   }
 }
 .nav-item:nth-child(1) {
@@ -304,46 +473,182 @@ header h1 {
 }
 
 .formulario__box-titulo .formulario__titulo {
-  font-size: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .formulario__box-titulo .formulario__parrafo {
-  font-size: 23px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.titulo-direccion {
+  font-size: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.p-direc {
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 /*FORMULARIOS*/
 .box-form {
-  background-image: url(../imagen/basketball-g2535881f0_1920.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: rgba(199, 186, 186, 0.5607843137);
+  border-radius: 7px;
+}
+.box-form .formulario {
+  height: 88vh;
+  width: 100%;
 }
 .box-form .titulo-form {
-  color: white;
+  color: rgb(76, 69, 69);
+  font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .box-form .cuentanos {
-  font-size: 25px;
-  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(15, 14, 14);
+  padding: 5px;
 }
 .box-form .input {
-  width: 90%;
-  height: 50px;
+  width: 100%;
+  height: 25px;
   background-color: rgba(177, 162, 162, 0.2666666667);
   border: solid 0.5px rgba(82, 67, 67, 0.342);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #5a5656;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
 }
 .box-form .input-area {
-  width: 90%;
+  width: 100%;
+  height: 100px;
   background-color: rgba(177, 162, 162, 0.2666666667);
   border: solid 0.5px rgba(82, 67, 67, 0.342);
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
 }
 .box-form .boton {
-  background-color: #793a3a;
+  background-color: rgba(228, 5, 5, 0.8352941176);
   height: 40px;
-  width: 90%;
+  width: 100%;
   color: white;
   border: none;
-  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.box-form .boton:hover {
+  color: #c2bdbd;
+  background-color: #3d3939;
+  border-radius: 5px;
+  border-bottom: solid 4px greenyellow;
 }
 
+/*media quary*/
+@media (max-width: 1115px) {
+  .box-ubicacion .caja-direc {
+    padding-bottom: 20px;
+  }
+  .formulario__box-titulo {
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 991px) {
+  .box-ubicacion .box-clinic-tel {
+    margin-top: 0gipx;
+  }
+  .box-ubicacion .caja-direc {
+    padding-bottom: 20px;
+  }
+  .box-ubicacion .maps {
+    height: 540px;
+  }
+  .box-titul-form .titulo-form {
+    font-size: 14px;
+  }
+  .formulario .cuentanos {
+    font-size: 11px;
+  }
+}
+@media (max-width: 990px) {
+  .formulario__box-titulo .formulario__titulo {
+    font-size: 20px;
+  }
+  .formulario__box-titulo .formulario__parrafo {
+    font-size: 14px;
+  }
+  .box-ubicacion .box-clinic-tel {
+    margin-top: 45px;
+  }
+  .box-ubicacion .caja-direc {
+    padding-bottom: 20px;
+  }
+  .box-ubicacion .caja-direc .titulo-direccion {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .box-ubicacion .caja-direc .p-direc {
+    font-size: 14px;
+  }
+  .box-ubicacion .caja-direc .maps {
+    height: 540px;
+  }
+}
+@media (max-width: 769px) {
+  .formulario__box-titulo .formulario__titulo {
+    font-size: 18px;
+  }
+  .formulario__box-titulo .formulario__parrafo {
+    font-size: 14px;
+  }
+  .box-ubicacion .box-clinic-tel {
+    margin-top: 45px;
+  }
+  .box-ubicacion .caja-direc .titulo-direccion {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contenedor-formulario {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 570px) {
+  .main-contac {
+    height: 270vh;
+  }
+  .box-ubicacion .maps {
+    height: 450px;
+  }
+}
+@media (max-width: 450px) {
+  .box-ubicacion .maps {
+    height: 350px;
+  }
+  .formulario__box-titulo .formulario__titulo {
+    font-size: 15px;
+  }
+  .formulario__box-titulo .formulario__parrafo {
+    font-size: 11px;
+  }
+  .box-ubicacion .box-clinic-tel {
+    margin-top: 45px;
+  }
+  .box-ubicacion .caja-direc .titulo-direccion {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  .box-ubicacion .caja-direc .p-direc {
+    font-size: 11px;
+  }
+}
 .fondo-productos {
   background-color: rgba(205, 250, 5, 0.2117647059);
   color: black;
@@ -354,6 +659,8 @@ header h1 {
 
 .box-productos {
   background-color: #CEFA05;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 .titulo-productos {
@@ -362,6 +669,8 @@ header h1 {
 
 .formulario__box-contacto {
   background-color: #CEFA05;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 .formulario__box-contacto .contac-titul {
   color: black;
@@ -376,6 +685,17 @@ header h1 {
 .tamaño-img {
   width: 90vw;
   height: 480px;
+}
+
+.carousel-caption {
+  width: 50vw;
+  margin-left: 10px;
+  background-color: rgba(6, 7, 1, 0.5215686275);
+  border-radius: 5px;
+  color: rgb(224, 217, 236);
+}
+.carousel-caption .p-carrusel {
+  color: #bec6d3;
 }
 
 /* MEDIA QUARY /*
@@ -536,7 +856,11 @@ header h1 {
   font-size: 14px;
 }
 .contenedor-od .titulo-od-grup {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.contenedor-od .titulo-od-grup .parrafo-od {
+  font-family: "Barlow Condensed", sans-serif;
 }
 .contenedor-od .btn-info2 {
   margin-top: 20px;
@@ -546,6 +870,7 @@ header h1 {
   height: 50px;
   width: 200px;
   border: none;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: rgb(63, 62, 62);
 }

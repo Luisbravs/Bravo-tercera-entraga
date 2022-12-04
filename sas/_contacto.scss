@@ -2,8 +2,11 @@
 
 .formulario__box-contacto{
     background-color: globales.$color-box-titulo-seccion;
+    font-family:globales.$font-titulos;
+    text-transform: uppercase;
     .contac-titul{
         color: globales.$color-letra-titulo-seccion;
+
          
         &:hover{
             color: #f8f8f8;
@@ -12,5 +15,8 @@
         }
     
     }
+    
 }
+
+
 

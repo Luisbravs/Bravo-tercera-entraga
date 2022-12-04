@@ -1,4 +1,5 @@
 
+@use "globales";
 .contenedor-od{
     background-color:rgb(216, 217, 218);
     color: rgb(41, 39, 39);
@@ -17,7 +18,11 @@
     font-size: 14px;
    }
    .titulo-od-grup{
-    font-size:1.3rem;
+    font-size:1.5rem;
+    font-family:globales.$font-texto;
+   .parrafo-od{
+    font-family:globales.$font-titulos;
+}
    }
    .btn-info2{
     margin-top: 20px;
@@ -27,6 +32,7 @@
     height: 50px;
     width:200px;
     border: none;
+    font-family:globales.$font-texto;
     font-weight:500;
     color: rgb(63, 62, 62);
     

@@ -2,13 +2,24 @@
 
 .ComoFunciona-box-titulo{
     background-color: globales.$color-box-titulo-seccion;
+    font-family:globales.$font-titulos;
+    text-transform: uppercase;
 }
 .ComoFunciona__titulo{
     color: globales.$color-letra-titulo-seccion;
 }
 .ComoFunciona__parrafo{
-    font-size: 1.5rem;
+    font-size: 22px;
     text-decoration: bold;
+    font-family: globales.$font-texto;
+
+
+}
+.ComoFunciona__box--texto{
+    .ComoFunciona__opciones{
+        font-size: 18px;
+        font-family:globales.$font-titulos;
+    }
 
 }
 
@@ -17,7 +28,8 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    
+   
+
    
 .MEN-1{
     display: inline-block;
@@ -30,11 +42,16 @@
      border-radius: 5px;
      text-align: center;
      padding: 10px;
+   
+
    a{
     text-decoration: none;
     color: black;
-
-    
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+    &:hover{
+        border-bottom: 4px solid rgb(238, 225, 214);
+    }
    }
 }
 .col-menu{
@@ -58,7 +75,15 @@
 
 .p-titulo{
     font-weight: 500;
-    font-size: 19px;
+    font-size: 18px;
+    font-family:globales.$font-texto;
+    text-align: justify;
+    
+}
+.instrucciones{
+    
+    font-size: 18px;
+    font-family:globales.$font-titulos;
     
 }
 .indicaciones-grupo{
@@ -66,10 +91,49 @@
 }
 .lista-compra{
     text-align: start;
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+}
+.texto-p2{
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+}
+.texto-p3{
+    font-size: 18px;
+    font-family:globales.$font-titulos;
 }
 .texto-p4{
-    font-weight: 500;
+    font-size: 18px;
+    font-family:globales.$font-titulos;
 }
+.titulo-h2{
+    font-size: 25px;
+    color: black;
+    font-family:globales.$font-titulos;
+    text-transform: uppercase;
+    text-align: start;
+}
+.pasos-envio{
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+}
+.indicaciones-clinica{
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+}
+.indicaciones-grupo{
+    font-size: 18px;
+    font-family:globales.$font-titulos;
+
+}
+.compra-minima{
+    font-size: 25px;
+    color: black;
+    font-family:globales.$font-titulos;
+    text-transform: uppercase;
+    text-align: start;
+}
+
 /* media quaris*/
 
 @media (max-width:992px){
